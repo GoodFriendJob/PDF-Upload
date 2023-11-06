@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="google" content="notranslate">
+    <title>PDF.js viewer</title>
+
+    <!-- This snippet is used in production (included from viewer.html) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link rel="resource" type="application/l10n" href="locale/locale.properties"> -->
+    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/viewer.css" />
+
+  </head>
+  
+  <body>
+    <div class="uploadOuter">
+      <div class="uploadBoxContainer">
+        <h1 class="logo">APE <img src="./images/logo-black.png" /></h1>
+        <div class="dragBox">
+          <div id="static">
+            <p><i class="fa fa-cloud-upload"></i></p>
+            <p>Drag & Drop plans here</p>
+          </div>
+          <div id="status" style="display: none;">
+            <i class="fa fa-spinner fa-spin"></i>
+            <span class="statusMsg"></span>
+          </div>
+          <input type="file" onChange="dragNdrop(event)"  ondragover="drag()" ondrop="drop()" id="uploadFile"  />
+        </div>
+        <div class="errorMsg">Please try uploading the demo file only.</div>
+      </div>
+    </div>
+    <canvas id="pdfViewer"></canvas >
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/pdf/pdf.js"></script>
+    <script src="assets/plugins/pdf/pdf.worker.js"></script>
+    <script src="assets/js/viewer.js"></script>
+  </body>
+</html>

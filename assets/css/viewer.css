@@ -1,0 +1,84 @@
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.logo img {
+  width: 48px;
+  margin-left: 10px;
+}
+h1 {
+  font-size: 52px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  line-height: 40px;
+  opacity: 0.5;
+}
+/*** custom style ***/
+.uploadOuter {
+  text-align: center;
+  padding: 20px;
+}
+.uploadBoxContainer {
+  min-width: 480px;
+  width: 45%;
+  margin: 0 auto;
+  /* padding:10px;
+  background:#eee; */
+}
+.errorMsg {
+  width: 100%;
+  background: #fff;
+  border: 3px dashed #aaa;
+  display: inline-block;
+  transition: transform 0.3s;
+  padding: 15px 0;
+  margin-top: 30px;
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 0px 15px 0px;
+  color: #da6d6d;
+  font-size: 1.2rem;
+}
+.dragBox {
+  width:100%;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  line-height: 95px;
+  color: #999;
+  background:#fff;
+  border: 3px dashed #aaa;
+  display: inline-block;
+  transition: transform 0.3s;
+  padding:70px 0;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 0px 15px 0px;
+}
+#static p {
+  font-weight:100;
+  font-size:24px;
+  margin:0;
+  line-height:32px;
+}
+#static i {
+  font-size:64px;
+}
+#status {
+  font-size:28px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+#status i {
+  font-size:42px;
+}
+.dragBox input[type="file"] {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+.draging {
+  transform: scale(1.1);
+}
